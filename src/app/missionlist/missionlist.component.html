@@ -1,4 +1,4 @@
-<div class="h-screen w-4/5 max-h-screen m-auto">
+<div class="h-screen w-5/6 max-h-screen m-auto">
   <div class="min-h-[15vh] flex w-full">
     <h1 class="text-5xl text-center m-auto">SpaceX Missions</h1>
   </div>
@@ -8,15 +8,15 @@
   </div>
   }
   <div
-    class="flex flex-col gap-5 max-h-[85vh] relative flex-grow overflow-auto hide-scroll"
+    class="flex flex-col gap-5 max-h-[85vh] w-full relative flex-grow overflow-y-auto hide-scroll"
   >
     @for (item of missions; track $index) {
     <div
-      class="flex flex-col btn btn-block h-fit min-h-fit py-5 px-10 bg-[#E5E6E6] border-2 border-stone-400
+      class="flex flex-col btn btn-block h-fit min-h-fit py-5 px-px sm:px-10 bg-[#E5E6E6] border-2 border-stone-400
       dark:bg-slate-700/50 dark:hover:bg-slate-800"
       (click)="showMissionDetails(item)"
     >
-      <div class="flex w-full items-center space-x-10">
+      <div class="flex w-full items-center space-x-5">
         <img
           class="aspect-square w-24 h-24"
           src="{{ item.links.mission_patch_small }}"
